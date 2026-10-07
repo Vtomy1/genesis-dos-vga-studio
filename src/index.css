@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+.font-dos {
+  font-family: 'VT323', monospace;
+}
+
+/* CRT Scanlines and phosphor simulation */
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+.crt-bloom {
+  filter: contrast(1.08) brightness(1.05) drop-shadow(0 0 1px rgba(50, 205, 50, 0.2));
+}
+
+.pixel-art {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Subtle DOS text glow */
+.dos-amber-glow {
+  text-shadow: 0 0 4px rgba(245, 158, 11, 0.4);
+}
+
+.dos-green-glow {
+  text-shadow: 0 0 4px rgba(34, 197, 94, 0.4);
+}

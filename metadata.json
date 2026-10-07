@@ -1,0 +1,7 @@
+{
+  "name": "Genesis2DOS VGA Studio",
+  "description": "Sega Genesis to MS-DOS 8-Bit 320x200 VGA Arcade Port Converter and MZ .EXE Header Builder",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
